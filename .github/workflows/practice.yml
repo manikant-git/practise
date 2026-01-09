@@ -1,4 +1,3 @@
-
 name: Show File Content
 
 on:
@@ -9,11 +8,12 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
 
-      - name: List files
-        run: ls -ltr
+      - name: Debug files
+        run: |
+          pwd
+          ls -R
 
       - name: Display file content
         run: cat sample.txt
