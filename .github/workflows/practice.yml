@@ -1,7 +1,7 @@
 name: Show File Content
 
 on:
-  workflow_dispatch
+  workflow_dispatch:
 
 jobs:
   show:
@@ -17,6 +17,7 @@ jobs:
 
       - name: Display file content
         run: cat sample.txt
+
       - name: Print GitHub Context
         run: |
           echo "Run ID: ${{ github.run_id }}"
