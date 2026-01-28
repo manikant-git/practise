@@ -1,7 +1,7 @@
 name: Show File Content
 
 on:
-  workflow_dispatch:
+  workflow_dispatch
 
 jobs:
   show:
