@@ -19,7 +19,7 @@ jobs:
         run: cat sample.txt
       - name: Print GitHub Context
         run: |
-        echo "Run ID: ${{ github.run_id }}"
-        echo "Run Number: ${{ github.run_number }}"
-        echo "Job Name: ${{ github.job }}"
-        echo "Workflow: ${{ github.workflow }}"
+          echo "Run ID: ${{ github.run_id }}"
+          echo "Run Number: ${{ github.run_number }}"
+          echo "Job Name: ${{ github.job }}"
+          echo "Workflow: ${{ github.workflow }}"
